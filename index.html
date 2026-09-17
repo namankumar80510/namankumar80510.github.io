@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Naman Kumar — Freelance Go and PHP Developer</title>
+<meta name="description" content="Naman Kumar, independent freelance software developer based in Muzaffarpur, Bihar, India. Go and PHP backend development, systems administration and infrastructure.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ground: #e9edee;
+    --paper: #ffffff;
+    --ink: #14202c;
+    --ink-soft: #4c5f6f;
+    --rule: #cdd6d9;
+    --accent: #1d6b59;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 6vh 6vw 10vh;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Public Sans", system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    background: var(--paper);
+    padding: clamp(2rem, 5vw, 3.75rem);
+    border: 1px solid var(--rule);
+  }
+
+  .masthead {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(1.25rem, 3vw, 2rem);
+  }
+
+  .portrait {
+    flex: 0 0 auto;
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border: 1px solid var(--rule);
+    filter: grayscale(1) contrast(1.05);
+  }
+
+  h1 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(2.4rem, 7vw, 3.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+
+  .role {
+    margin: 0.6rem 0 0;
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+    max-width: 34rem;
+  }
+
+  h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 1rem;
+  }
+
+  section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  section:first-of-type {
+    border-top: 3px solid var(--accent);
+  }
+
+  dl {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 8.5rem 1fr;
+    gap: 0.55rem 1.5rem;
+  }
+
+  dt {
+    color: var(--ink-soft);
+    font-weight: 500;
+  }
+
+  dd {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  li { margin-bottom: 0.5rem; }
+
+  li:last-child { margin-bottom: 0; }
+
+  p { max-width: 36rem; }
+
+  a {
+    color: var(--accent);
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+  }
+
+  a:hover { text-decoration-thickness: 2px; }
+
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  footer {
+    max-width: 44rem;
+    margin: 1.25rem auto 0;
+    color: var(--ink-soft);
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 34rem) {
+    .masthead { flex-direction: column; gap: 1.25rem; }
+    .portrait { width: 80px; height: 80px; }
+    dl { grid-template-columns: 1fr; gap: 0.15rem; }
+    dt { font-size: 0.9rem; }
+    dd { margin-bottom: 0.9rem; }
+  }
+</style>
+</head>
+<body>
+
+<main>
+  <div class="masthead">
+    <img class="portrait"
+         src="me.png"
+         alt="Photograph of Naman Kumar"
+         width="96" height="96">
+    <div>
+      <h1>Naman Kumar</h1>
+      <p class="role">
+        Independent freelance software developer. Go and PHP backend
+        development, systems administration and infrastructure.
+      </p>
+    </div>
+  </div>
+
+  <section>
+    <h2>Contact</h2>
+    <dl>
+      <dt>Email</dt>
+      <dd><a href="mailto:namankumar80510@gmail.com">namankumar80510@gmail.com</a></dd>
+
+      <dt>Phone</dt>
+      <dd><a href="tel:+918051033552">+91 80510 33552</a></dd>
+
+      <dt>Location</dt>
+      <dd>Muzaffarpur, Bihar 842001, India</dd>
+
+      <dt>Code</dt>
+      <dd><a href="https://github.com/namankumar80510">github.com/namankumar80510</a></dd>
+    </dl>
+    <p>
+      Email is the fastest way to reach me. I reply to new enquiries within
+      one working day, and I'm available for both ongoing retainers and
+      one-off project work.
+    </p>
+  </section>
+
+  <section>
+    <h2>What I work on</h2>
+    <ul>
+      <li>Migrating legacy PHP applications to modern stacks — Go, SvelteKit, Next.js.</li>
+      <li>Backend services and HTTP APIs in Go and PHP.</li>
+      <li>Linux server administration: deployment, TLS, reverse proxies, automated backups.</li>
+      <li>Self-hosted infrastructure — container deployment, git hosting, object storage.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Business details</h2>
+    <dl>
+      <dt>Trading as</dt>
+      <dd>Naman Kumar, sole proprietor</dd>
+
+      <dt>Registration</dt>
+      <dd>Udyam (MSME), services — UDYAM-BR-23-0134180</dd>
+
+      <dt>Clients</dt>
+      <dd>Direct engagements, invoiced monthly in USD</dd>
+
+      <dt>Payment</dt>
+      <dd>Payoneer, PayPal or bank transfer</dd>
+    </dl>
+  </section>
+</main>
+
+<footer>© 2026 Naman Kumar</footer>
+
+</body>
+</html>
