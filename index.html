@@ -39,21 +39,6 @@
     border: 1px solid var(--rule);
   }
 
-  .masthead {
-    display: flex;
-    align-items: flex-start;
-    gap: clamp(1.25rem, 3vw, 2rem);
-  }
-
-  .portrait {
-    flex: 0 0 auto;
-    width: 96px;
-    height: 96px;
-    object-fit: cover;
-    border: 1px solid var(--rule);
-    filter: grayscale(1) contrast(1.05);
-  }
-
   h1 {
     font-family: "Newsreader", Georgia, serif;
     font-weight: 500;
@@ -137,8 +122,6 @@
   }
 
   @media (max-width: 34rem) {
-    .masthead { flex-direction: column; gap: 1.25rem; }
-    .portrait { width: 80px; height: 80px; }
     dl { grid-template-columns: 1fr; gap: 0.15rem; }
     dt { font-size: 0.9rem; }
     dd { margin-bottom: 0.9rem; }
@@ -148,19 +131,11 @@
 <body>
 
 <main>
-  <div class="masthead">
-    <img class="portrait"
-         src="me.png"
-         alt="Photograph of Naman Kumar"
-         width="96" height="96">
-    <div>
-      <h1>Naman Kumar</h1>
-      <p class="role">
-        Independent freelance software developer. Go and PHP backend
-        development, systems administration and infrastructure.
-      </p>
-    </div>
-  </div>
+  <h1>Naman Kumar</h1>
+  <p class="role">
+    Independent freelance software developer. Go and PHP backend
+    development, systems administration and infrastructure.
+  </p>
 
   <section>
     <h2>Contact</h2>
